@@ -1,0 +1,25 @@
+{
+  "id": "proj-002",
+  "slug": "sentinel-monitor",
+  "title": "Sentinel Monitor",
+  "description": "Gerçek zamanlı sistem izleme ve alerting platformu. Sunucu metriklerini takip eder, anomalileri tespit eder ve kritik durumlarda anında bildirim gönderir.",
+  "shortDescription": "Gerçek zamanlı sistem izleme platformu",
+  "thumbnail": "/images/projects/sentinel-monitor-thumb.jpg",
+  "images": ["/images/projects/sentinel-monitor-1.jpg"],
+  "category": "web",
+  "techStack": [
+    { "id": "ts-006", "name": "Next.js", "category": "frontend" },
+    { "id": "ts-007", "name": "GraphQL", "category": "frontend" },
+    { "id": "ts-008", "name": "Docker", "category": "devops" },
+    { "id": "ts-009", "name": "Prometheus", "category": "backend" }
+  ],
+  "liveUrl": "https://sentinel-monitor.demo.com",
+  "githubUrl": "https://github.com/hikmetgulsesli/sentinel-monitor",
+  "featured": true,
+  "publishedAt": "2024-02-20T14:30:00Z",
+  "status": "published",
+  "content": "# Sentinel Monitor\n\nSistem izleme çözümü...",
+  "sortOrder": 2,
+  "createdAt": "2024-01-15T09:00:00Z",
+  "updatedAt": "2024-02-20T14:30:00Z"
+}

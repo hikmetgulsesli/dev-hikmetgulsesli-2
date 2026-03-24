@@ -1,2 +1,5 @@
 STATUS: done
-EXISTING_CODE: true
+STORY_BRANCH: 3fcc3746-US-004
+PR_URL: https://github.com/hikmetgulsesli/dev-hikmetgulsesli-2/pull/7
+CHANGES: Implemented Projects API with GET /api/projects (paginated, filterable), GET /api/projects/[slug] (returns 404 for not found), GET /api/projects/featured (max 6 items). File-system storage with 4 sample projects. All responses use ApiResponse<T> format.
+TESTS: 15 vitest tests passing covering getAllProjects, getProjectBySlug, getFeaturedProjects, searchProjects, filterProjectsByCategory, filterFeaturedProjects

@@ -1,0 +1,34 @@
+{
+  "id": "post-004",
+  "slug": "career-transition",
+  "title": "From Backend to Frontend: A Career Transition Story",
+  "excerpt": "Backend geliştiriciden frontend'e geçiş hikayem. Karşılaştığım zorluklar, öğrendiğim dersler ve tavsiyelerim.",
+  "featuredImage": "/images/blog/career-transition-cover.jpg",
+  "category": "career",
+  "tags": ["career", "frontend", "personal", "transition"],
+  "readTime": 10,
+  "publishedAt": "2024-05-15T10:00:00Z",
+  "status": "published",
+  "content": "# From Backend to Frontend\n\n## Introduction\n\n...",
+  "author": {
+    "id": "author-001",
+    "name": "Hikmet Güleşli",
+    "avatar": "/images/avatar.jpg",
+    "title": "Full-Stack Developer",
+    "bio": "Modern web teknolojileri ile dijital ürünler geliştiriyorum.",
+    "location": "Türkiye",
+    "social": {
+      "github": "https://github.com/hikmetgulsesli",
+      "linkedin": "https://linkedin.com/in/hikmetgulsesli",
+      "twitter": "https://twitter.com/hikmetgulsesli"
+    }
+  },
+  "featured": false,
+  "pinned": false,
+  "seo": {
+    "title": "Backend'den Frontend'e Kariyer Geçişi",
+    "description": "Backend geliştiriciden frontend'e geçiş hikayesi."
+  },
+  "createdAt": "2024-05-01T08:00:00Z",
+  "updatedAt": "2024-05-15T10:00:00Z"
+}

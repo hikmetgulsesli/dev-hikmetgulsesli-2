@@ -1,0 +1,34 @@
+{
+  "id": "post-002",
+  "slug": "future-ai-agents",
+  "title": "The Future of AI Agents in Development",
+  "excerpt": "Yapay zeka ajanlarının yazılım geliştirme süreçlerini nasıl dönüştürdüğünü ve gelecekte hangi yeniliklerin bizi beklediğini keşfediyoruz.",
+  "featuredImage": "/images/blog/ai-agents-cover.jpg",
+  "category": "teknik",
+  "tags": ["ai", "agents", "future", "development"],
+  "readTime": 12,
+  "publishedAt": "2024-07-05T10:00:00Z",
+  "status": "published",
+  "content": "# The Future of AI Agents in Development\n\n## Introduction\n\n...",
+  "author": {
+    "id": "author-001",
+    "name": "Hikmet Güleşli",
+    "avatar": "/images/avatar.jpg",
+    "title": "Full-Stack Developer",
+    "bio": "Modern web teknolojileri ile dijital ürünler geliştiriyorum.",
+    "location": "Türkiye",
+    "social": {
+      "github": "https://github.com/hikmetgulsesli",
+      "linkedin": "https://linkedin.com/in/hikmetgulsesli",
+      "twitter": "https://twitter.com/hikmetgulsesli"
+    }
+  },
+  "featured": true,
+  "pinned": true,
+  "seo": {
+    "title": "Geliştirmede AI Ajanlarının Geleceği",
+    "description": "Yapay zeka ajanlarının yazılım geliştirme süreçlerini nasıl dönüştürdüğünü keşfedin."
+  },
+  "createdAt": "2024-07-01T08:00:00Z",
+  "updatedAt": "2024-07-05T10:00:00Z"
+}

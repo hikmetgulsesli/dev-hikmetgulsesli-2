@@ -4,64 +4,50 @@
  */
 
 import { describe, expect, test } from 'vitest';
+import * as fs from 'fs';
+import * as path from 'path';
 
 // Parse CSS custom properties from globals.css
 function parseCSSVariables(): Record<string, string> {
-  const cssContent = `
-    --color-primary: #4edea3;
-    --color-primary-dark: #3bc98a;
-    --color-primary-light: #6fe4b5;
-    --color-on-primary: #0a0a0a;
-    --color-primary-container: rgba(78, 222, 163, 0.15);
-    --color-on-primary-container: #4edea3;
-    --color-secondary: #c0c1ff;
-    --color-secondary-dark: #a0a1ef;
-    --color-secondary-light: #d0d1ff;
-    --color-on-secondary: #0a0a0a;
-    --color-secondary-container: rgba(192, 193, 255, 0.15);
-    --color-on-secondary-container: #c0c1ff;
-    --color-tertiary: #ffb4ab;
-    --color-tertiary-dark: #ff9a93;
-    --color-tertiary-light: #ffcec9;
-    --color-on-tertiary: #0a0a0a;
-    --color-tertiary-container: rgba(255, 180, 171, 0.15);
-    --color-on-tertiary-container: #ffb4ab;
-    --color-error: #ffb4ab;
-    --color-error-dark: #ff9a93;
-    --color-on-error: #0a0a0a;
-    --color-error-container: rgba(255, 180, 171, 0.15);
-    --color-on-error-container: #ffb4ab;
-    --color-surface: #131318;
-    --color-surface-bright: #1a1a20;
-    --color-surface-container-lowest: #0d0d10;
-    --color-surface-container-low: #1b1b20;
-    --color-surface-container: #1f1f25;
-    --color-surface-container-high: #2a292f;
-    --color-surface-container-highest: #353440;
-    --color-surface-tint: rgba(78, 222, 163, 0.08);
-    --color-on-surface: #fafafa;
-    --color-on-surface-variant: #a1a1aa;
-    --color-on-surface-bright: #fafafa;
-    --color-outline: rgba(161, 161, 170, 0.2);
-    --color-outline-variant: rgba(161, 161, 170, 0.1);
-    --color-background: #0a0a0a;
-    --color-on-background: #fafafa;
-    --color-inverse-surface: #fafafa;
-    --color-inverse-on-surface: #0a0a0a;
-    --color-inverse-primary: #10b981;
-    --color-shadow: #000000;
-    --color-scrim: #000000;
-  `;
+  const globalsCssPath = path.resolve(process.cwd(), 'app', 'globals.css');
+  const cssContent = fs.readFileSync(globalsCssPath, 'utf-8');
 
   const vars: Record<string, string> = {};
-  const matches = cssContent.matchAll(/--([\w-]+):\s*([^;]+);/g);
+  // Extract :root block
+  const rootBlockMatch = cssContent.match(/:root\s*\{([^}]+)\}/);
+  if (!rootBlockMatch) {
+    return vars;
+  }
+
+  const matches = rootBlockMatch[1].matchAll(/--([\w-]+):\s*([^;]+);/g);
   for (const match of matches) {
     vars[match[1]] = match[2].trim();
   }
   return vars;
 }
 
+// Parse ::selection rule from globals.css
+function parseSelectionRule(): { backgroundColor: string; color: string } | null {
+  const globalsCssPath = path.resolve(process.cwd(), 'app', 'globals.css');
+  const cssContent = fs.readFileSync(globalsCssPath, 'utf-8');
+
+  const selectionMatch = cssContent.match(/::selection\s*\{([^}]+)\}/);
+  if (!selectionMatch) {
+    return null;
+  }
+
+  const block = selectionMatch[1];
+  const bgMatch = block.match(/background-color:\s*([^;]+);/);
+  const colorMatch = block.match(/color:\s*([^;]+);/);
+
+  return {
+    backgroundColor: bgMatch ? bgMatch[1].trim() : '',
+    color: colorMatch ? colorMatch[1].trim() : '',
+  };
+}
+
 const cssVars = parseCSSVariables();
+const selectionRule = parseSelectionRule();
 
 describe('Primary Colors', () => {
   test('primary color is emerald green', () => {
@@ -102,6 +88,15 @@ describe('Tertiary Colors', () => {
   });
 });
 
+describe('Error Colors', () => {
+  test('error color is distinct red (not duplicate of tertiary)', () => {
+    // Error should be red, not rose
+    expect(cssVars['color-error']).not.toBe('#ffb4ab');
+    // Should be a red color (hex #f44336 or rgba with red values)
+    expect(cssVars['color-error']).toMatch(/^#f44336$|^rgba?\([^)]*(?:244|239)[^)]*\)$/);
+  });
+});
+
 describe('Surface Colors', () => {
   test('surface base is deep obsidian', () => {
     expect(cssVars['color-surface']).toBe('#131318');
@@ -139,10 +134,10 @@ describe('Outline Colors (Ghost Borders)', () => {
 });
 
 describe('Selection Colors', () => {
-  test('selection uses primary with 30% opacity - verified in globals.css', () => {
-    // This is tested via the ::selection rule in globals.css
-    // The color is rgba(78, 222, 163, 0.3) - verified by visual inspection
-    expect(true).toBe(true);
+  test('selection uses primary with 30% opacity', () => {
+    expect(selectionRule).not.toBeNull();
+    // Should use primary color (rgba with 0.3 alpha)
+    expect(selectionRule!.backgroundColor).toMatch(/rgba?\([^)]*78,?\s*222,?\s*163,?\s*0\.3[^)]*\)/);
   });
 });
 

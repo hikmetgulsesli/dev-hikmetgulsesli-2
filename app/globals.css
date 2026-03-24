@@ -31,12 +31,12 @@
   --color-tertiary-container: rgba(255, 180, 171, 0.15);
   --color-on-tertiary-container: #ffb4ab;
   
-  /* Error */
-  --color-error: #ffb4ab;
-  --color-error-dark: #ff9a93;
-  --color-on-error: #0a0a0a;
-  --color-error-container: rgba(255, 180, 171, 0.15);
-  --color-on-error-container: #ffb4ab;
+  /* Error - Distinct red (not duplicate of tertiary/rose) */
+  --color-error: #f44336;
+  --color-error-dark: #d32f2f;
+  --color-on-error: #ffffff;
+  --color-error-container: rgba(244, 67, 54, 0.15);
+  --color-on-error-container: #f44336;
   
   /* Surfaces (The "No-Line" Rule) */
   --color-surface: #131318;
@@ -157,10 +157,10 @@
   --color-inverse-on-surface: var(--color-inverse-on-surface);
   --color-inverse-primary: var(--color-inverse-primary);
   
-  /* Fonts */
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-display: "Space Grotesk", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  /* Fonts - reference next/font variables from layout.tsx */
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
   
   /* Border radius */
   --radius-xs: var(--radius-xs);
@@ -184,6 +184,19 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion - respect user preferences */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -604,18 +617,9 @@ body {
 }
 
 /* Stagger container for lists */
+/* Use --stagger-index CSS custom property on children for dynamic delay */
 .stagger-container > * {
   opacity: 0;
   animation: fadeUp var(--transition-slow) ease forwards;
+  animation-delay: calc(var(--stagger-index, 0) * 100ms);
 }
-
-.stagger-container > *:nth-child(1) { animation-delay: 0ms; }
-.stagger-container > *:nth-child(2) { animation-delay: 100ms; }
-.stagger-container > *:nth-child(3) { animation-delay: 200ms; }
-.stagger-container > *:nth-child(4) { animation-delay: 300ms; }
-.stagger-container > *:nth-child(5) { animation-delay: 400ms; }
-.stagger-container > *:nth-child(6) { animation-delay: 500ms; }
-.stagger-container > *:nth-child(7) { animation-delay: 600ms; }
-.stagger-container > *:nth-child(8) { animation-delay: 700ms; }
-.stagger-container > *:nth-child(9) { animation-delay: 800ms; }
-.stagger-container > *:nth-child(10) { animation-delay: 900ms; }

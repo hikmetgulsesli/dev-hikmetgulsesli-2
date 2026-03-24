@@ -1,6 +1,27 @@
-=== US-003: TypeScript types and data models ===
-COMPLETED: 2026-03-24T13:23:47+00:00
-FILES CHANGED: types/index.ts, types/validation.ts, __tests__/types.test.ts, __tests__/validation.test.ts
-KEY DECISIONS: All interfaces defined per PRD v3 spec; Zod schema supports Turkish characters for names; 57 tests covering all interfaces and validation edge cases
-DEPENDENCIES ADDED: zod (already present in project)
-PR_URL: https://github.com/setrox/dev-hikmetgulsesli/pull/4
+=== US-010: Toast, Modal, Skeleton, Status Indicator, Accordion, Tabs ===
+COMPLETED: 2026-03-24T15:24:00+00:00
+FILES CHANGED:
+  - components/ui/toast.tsx (new)
+  - components/ui/modal.tsx (new)
+  - components/ui/skeleton.tsx (new)
+  - components/ui/status-indicator.tsx (new)
+  - components/ui/accordion.tsx (new)
+  - components/ui/tabs.tsx (new)
+  - __tests__/toast.test.tsx (new)
+  - __tests__/modal.test.tsx (new)
+  - __tests__/skeleton.test.tsx (new)
+  - __tests__/status-indicator.test.tsx (new)
+  - __tests__/accordion.test.tsx (new)
+  - __tests__/tabs.test.tsx (new)
+  - vitest.config.ts (updated: include .tsx files, jsdom environment)
+
+KEY DECISIONS:
+  - Used Framer Motion for Toast auto-dismiss animations, Modal scale/fade, Accordion height, Tabs underline layoutId
+  - Toast variants match design tokens: success/error/warning/info/default with correct border and icon colors
+  - Modal uses AnimatePresence for enter/exit, focus-trap implemented manually
+  - Skeleton uses CSS variables for theming, supports pulse/wave/none animations
+  - Status Indicator uses Framer Motion ping/pulse animations with absolute positioned overlay dots
+  - Accordion supports single (one open at a time) and multiple (allowAllClosed option) modes
+  - Tabs use layoutId for shared animated underline, supports icons, controlled and uncontrolled modes
+
+DEPENDENCIES ADDED: none (all used existing deps: framer-motion, lucide-react, zod)

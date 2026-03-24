@@ -1,0 +1,9 @@
+{
+  "id": "skill-007",
+  "name": "Tailwind CSS",
+  "icon": "tailwind",
+  "proficiency": 93,
+  "category": "frontend",
+  "years": 4,
+  "projects": 20
+}

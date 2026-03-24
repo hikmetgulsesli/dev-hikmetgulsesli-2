@@ -1,0 +1,24 @@
+{
+  "name": "Hikmet Güleşli",
+  "avatar": "/images/avatar.jpg",
+  "title": "Full-Stack Developer & Sistem Mühendisi",
+  "bio": "Modern web teknolojileri ile kullanıcı odaklı dijital ürünler geliştiriyorum. Özellikle React, Next.js ve Node.js ekosistemlerinde uzmanlaşmış olsam da, tam yığın geliştirme süreçlerinin her aşamasında çalışmaktan key alıyorum. Performans optimizasyonu, erişilebilirlik ve temiz kod yazımına özel önem veriyorum.",
+  "location": "İstanbul, Türkiye",
+  "social": {
+    "github": "https://github.com/hikmetgulsesli",
+    "linkedin": "https://linkedin.com/in/hikmetgulsesli",
+    "twitter": "https://twitter.com/hikmetgulsesli",
+    "email": "hikmet@hikmetgulsesli.com",
+    "website": "https://hikmetgulsesli.com"
+  },
+  "skills": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Next.js",
+    "Tailwind CSS",
+    "PostgreSQL",
+    "Docker",
+    "AWS"
+  ]
+}

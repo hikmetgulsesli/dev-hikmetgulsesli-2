@@ -1,0 +1,9 @@
+{
+  "id": "skill-003",
+  "name": "Next.js",
+  "icon": "nextjs",
+  "proficiency": 90,
+  "category": "frontend",
+  "years": 4,
+  "projects": 18
+}

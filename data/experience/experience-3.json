@@ -1,0 +1,18 @@
+{
+  "id": "exp-003",
+  "title": "Junior Web Geliştirici",
+  "company": "WebCraft Agency",
+  "companyUrl": "https://webcraft.example.com",
+  "location": "İstanbul, Türkiye",
+  "startDate": "2018-09",
+  "endDate": "2020-05",
+  "current": false,
+  "description": "Küçük ölçekli web siteleri ve uygulamalar geliştirdim. HTML, CSS ve JavaScript ile temel web teknolojilerini öğrenerek profesyonel kariyerime sağlam bir temel oluşturdum.",
+  "logo": "/images/companies/webcraft.png",
+  "type": "full-time",
+  "achievements": [
+    "15+ kurumsal web sitesi geliştirdim",
+    "WordPress ve özel CMS çözümleri uyguladım",
+    "Temel SEO optimizasyonları gerçekleştirdim"
+  ]
+}

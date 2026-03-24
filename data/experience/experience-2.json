@@ -1,0 +1,18 @@
+{
+  "id": "exp-002",
+  "title": "Full-Stack Geliştirici",
+  "company": "Digital Solutions Ltd.",
+  "companyUrl": "https://digitalsolutions.example.com",
+  "location": "Ankara, Türkiye",
+  "startDate": "2020-06",
+  "endDate": "2022-02",
+  "current": false,
+  "description": "Müşteri projeleri için web uygulamaları geliştirdim. React ve Node.js tabanlı çözümler sunarak dijital dönüşüm süreçlerine katkıda bulundum.",
+  "logo": "/images/companies/digitalsolutions.png",
+  "type": "full-time",
+  "achievements": [
+    "20+ başarılı müşteri projesini zamanında teslim ettim",
+    "React tabanlı component kütüphanesi oluşturdum",
+    "RESTful API mimarisi tasarlayıp uyguladım"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "skill-006",
+  "name": "Docker",
+  "icon": "container",
+  "proficiency": 78,
+  "category": "devops",
+  "years": 3,
+  "projects": 12
+}

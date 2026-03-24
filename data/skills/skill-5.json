@@ -1,0 +1,9 @@
+{
+  "id": "skill-005",
+  "name": "PostgreSQL",
+  "icon": "database",
+  "proficiency": 82,
+  "category": "database",
+  "years": 5,
+  "projects": 15
+}

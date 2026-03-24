@@ -1,0 +1,9 @@
+{
+  "id": "skill-002",
+  "name": "TypeScript",
+  "icon": "typescript",
+  "proficiency": 92,
+  "category": "frontend",
+  "years": 5,
+  "projects": 30
+}

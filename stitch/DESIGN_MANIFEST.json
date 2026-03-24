@@ -1,0 +1,62 @@
+{
+  "projectId": "2269194756870439603",
+  "screens": [
+    {
+      "id": "51b4e4fe81134726a68bfde925028f6d",
+      "title": "Projeler - Hikmet Güleşli",
+      "file": "Projeler---Hikmet-Güleşli.html",
+      "screenshot": "Projeler---Hikmet-Güleşli.png",
+      "width": "2560",
+      "height": "4150"
+    },
+    {
+      "id": "901b07591d984879a0f28a7e1279825b",
+      "title": "Proje Detay - Vesta Dashboard",
+      "file": "Proje-Detay---Vesta-Dashboard.html",
+      "screenshot": "Proje-Detay---Vesta-Dashboard.png",
+      "width": "2560",
+      "height": "5660"
+    },
+    {
+      "id": "6179c8995f1c4f3b9d442717d40735dc",
+      "title": "Blog - Hikmet Güleşli",
+      "file": "Blog---Hikmet-Güleşli.html",
+      "screenshot": "Blog---Hikmet-Güleşli.png",
+      "width": "2560",
+      "height": "3958"
+    },
+    {
+      "id": "ffd88b8781484c53936ffd6726b509ee",
+      "title": "Blog Detay - Hikmet Güleşli",
+      "file": "Blog-Detay---Hikmet-Güleşli.html",
+      "screenshot": "Blog-Detay---Hikmet-Güleşli.png",
+      "width": "2560",
+      "height": "5504"
+    },
+    {
+      "id": "9a31eab4d152451399485299e1a65cf3",
+      "title": "Hakkında - Hikmet Güleşli",
+      "file": "Hakkında---Hikmet-Güleşli.html",
+      "screenshot": "Hakkında---Hikmet-Güleşli.png",
+      "width": "2560",
+      "height": "3012"
+    },
+    {
+      "id": "0539313873cb412d9d0b86ff0961a9ef",
+      "title": "İletişim - Hikmet Güleşli",
+      "file": "İletişim---Hikmet-Güleşli.html",
+      "screenshot": "İletişim---Hikmet-Güleşli.png",
+      "width": "2560",
+      "height": "2702"
+    },
+    {
+      "id": "0da9a09fb1e44e77824f0b81fe565023",
+      "title": "Ana Sayfa",
+      "file": "Ana-Sayfa.html",
+      "screenshot": "Ana-Sayfa.png",
+      "width": "2560",
+      "height": "5668"
+    }
+  ],
+  "generatedAt": "2026-03-24T11:24:26.861Z"
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KINETIC_CONSOLE // Writing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#4edea3",
+              "on-primary-container": "#00422b",
+              "surface-container-highest": "#35343a",
+              "surface-variant": "#35343a",
+              "tertiary-container": "#fc7c78",
+              "secondary-fixed-dim": "#c0c1ff",
+              "outline-variant": "#3c4a42",
+              "secondary-fixed": "#e1e0ff",
+              "on-tertiary-fixed": "#410005",
+              "on-primary": "#003824",
+              "surface-container-low": "#1b1b20",
+              "surface-bright": "#39383e",
+              "on-tertiary-fixed-variant": "#842225",
+              "primary": "#4edea3",
+              "inverse-surface": "#e4e1e9",
+              "secondary": "#c0c1ff",
+              "primary-container": "#10b981",
+              "surface": "#131318",
+              "on-primary-fixed": "#002113",
+              "inverse-primary": "#006c49",
+              "on-tertiary": "#650911",
+              "on-secondary-fixed-variant": "#2f2ebe",
+              "inverse-on-surface": "#303036",
+              "surface-tint": "#4edea3",
+              "on-surface": "#e4e1e9",
+              "on-secondary": "#1000a9",
+              "background": "#131318",
+              "on-surface-variant": "#bbcabf",
+              "on-background": "#e4e1e9",
+              "surface-dim": "#131318",
+              "primary-fixed": "#6ffbbe",
+              "surface-container-lowest": "#0e0e13",
+              "error-container": "#93000a",
+              "outline": "#86948a",
+              "tertiary-fixed-dim": "#ffb3af",
+              "on-secondary-container": "#b0b2ff",
+              "on-secondary-fixed": "#07006c",
+              "on-primary-fixed-variant": "#005236",
+              "on-error": "#690005",
+              "surface-container-high": "#2a292f",
+              "on-tertiary-container": "#711419",
+              "on-error-container": "#ffdad6",
+              "secondary-container": "#3131c0",
+              "tertiary-fixed": "#ffdad7",
+              "surface-container": "#1f1f25",
+              "error": "#ffb4ab",
+              "tertiary": "#ffb3af"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"],
+              "mono": ["JetBrains Mono"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .scanline-overlay {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+            z-index: 100;
+            opacity: 0.03;
+        }
+        .glow-sm { text-shadow: 0 0 10px rgba(78, 222, 163, 0.5); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+<div class="scanline-overlay"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-xl shadow-[0_0_20px_rgba(16,185,129,0.1)] flex justify-between items-center px-8 py-4 max-w-none w-full">
+<div class="text-emerald-500 font-['JetBrains_Mono'] font-bold before:content-['&gt;_']">KINETIC_CONSOLE</div>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] uppercase tracking-tighter font-bold">
+<a class="text-zinc-400 hover:text-emerald-300 transition-colors" href="#">Projects</a>
+<a class="text-zinc-400 hover:text-emerald-300 transition-colors" href="#">Stack</a>
+<a class="text-emerald-400 border-b-2 border-emerald-500 pb-1" href="#">Archive</a>
+<a class="text-zinc-400 hover:text-emerald-300 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-500 cursor-pointer hover:bg-emerald-500/10 transition-all duration-300 p-2 rounded">terminal</span>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Header -->
+<header class="mb-16 border-l-2 border-primary pl-8">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4 text-on-surface">Writing</h1>
+<p class="font-body text-on-surface-variant max-w-2xl text-lg leading-relaxed">
+                A collection of thoughts, tutorials, and system logs on full-stack development and AI. 
+                Streaming insights from the deep-tech console.
+            </p>
+</header>
+<!-- Command Palette Search & Filter -->
+<div class="mb-12 space-y-8">
+<div class="relative max-w-3xl">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="font-mono text-primary mr-2">&gt;_</span>
+</div>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary/50 text-on-surface font-mono py-4 pl-12 pr-6 rounded-md placeholder:text-zinc-600" placeholder="EXECUTE_SEARCH --query 'react optimizations'..." type="text"/>
+</div>
+<div class="flex flex-wrap gap-3 font-mono text-xs uppercase tracking-widest">
+<button class="px-4 py-2 bg-primary text-on-primary font-bold transition-all">Tümü</button>
+<button class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all border border-outline-variant/20">Teknik</button>
+<button class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all border border-outline-variant/20">Kariyer</button>
+<button class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all border border-outline-variant/20">Kişisel</button>
+<button class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all border border-outline-variant/20">Tutorial</button>
+</div>
+</div>
+<!-- Featured Article -->
+<section class="mb-16">
+<div class="group relative bg-surface-container-low border-l-4 border-primary p-8 md:p-12 overflow-hidden transition-all duration-500 hover:bg-surface-container">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<div class="flex items-center gap-4 mb-6">
+<span class="font-mono text-xs bg-primary/10 text-primary px-3 py-1 border border-primary/20 uppercase tracking-widest">PINNED_LOG</span>
+<span class="font-mono text-xs text-on-surface-variant">2024-05-12</span>
+</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-6 group-hover:text-primary transition-colors">The Future of AI Agents in Developer Workflows</h2>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed line-clamp-3">
+                            Exploring the shift from copilots to autonomous agents. How large language models are evolving from code suggestions to full-cycle engineering partners capable of managing entire CI/CD pipelines.
+                        </p>
+<div class="flex items-center gap-6">
+<a class="font-mono text-primary flex items-center gap-2 group/link" href="#">
+<span>[ READ_FULL_ENTRY ]</span>
+<span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+<span class="font-mono text-xs text-zinc-500">EST_READ: 12 MIN</span>
+</div>
+</div>
+<div class="relative aspect-video bg-surface-container-high border border-outline-variant/10 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Abstract neural network visualization with emerald accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOqBDdjNNXmny5rStyNoWp7M07MDDpr4U15ntd69CGDfH8dz_atczAIsV0fkUDtUPK6lIDlrjh77nHWZiLbsblf-y_8oWb2rxra28ck9sE0XDDMZpEQphj2Q3lMF3DvdugE5GPCPnQFTn4gzlvqyEqBiKdMfNifRQjH9KKgGS4zLdwvA3xfwijYKncE0qb6zdhbFJ93A8WVjXRNnYH-GBe27G_PDvczp9oTASTQ2I4cOoe6OhHC2oIQ0aB3ZxDaxYZro-f5IygBh8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="grid md:grid-cols-2 gap-8 mb-16">
+<!-- Card 1 -->
+<article class="group bg-surface-container hover:bg-surface-container-high border-l-2 border-transparent hover:border-primary transition-all duration-300 p-8 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="font-mono text-[10px] text-zinc-500 tracking-widest uppercase">2024-04-28 // 08:45 AM</span>
+<span class="bg-surface-container-highest text-secondary text-[10px] font-mono px-2 py-1 uppercase tracking-tighter">Teknik</span>
+</div>
+<h3 class="font-headline text-2xl font-bold uppercase mb-4">Optimizing React for 60fps</h3>
+<p class="text-on-surface-variant mb-8 line-clamp-2">
+                        A deep dive into Profiler API, specialized hooks for heavy computation, and memoization strategies that actually work in production environments.
+                    </p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-mono text-xs text-primary-fixed-dim">// READ_TIME: 8 MIN</span>
+<a class="p-2 hover:bg-primary/10 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined text-primary">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group bg-surface-container hover:bg-surface-container-high border-l-2 border-transparent hover:border-primary transition-all duration-300 p-8 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="font-mono text-[10px] text-zinc-500 tracking-widest uppercase">2024-04-15 // 14:20 PM</span>
+<span class="bg-surface-container-highest text-secondary text-[10px] font-mono px-2 py-1 uppercase tracking-tighter">Tutorial</span>
+</div>
+<h3 class="font-headline text-2xl font-bold uppercase mb-4">Building Terminal UIs with Tailwind CSS</h3>
+<p class="text-on-surface-variant mb-8 line-clamp-2">
+                        Leveraging utility classes to create high-fidelity CLI-inspired interfaces. Mastering grid layouts and custom shadows for the retro-future look.
+                    </p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-mono text-xs text-primary-fixed-dim">// READ_TIME: 15 MIN</span>
+<a class="p-2 hover:bg-primary/10 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined text-primary">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group bg-surface-container hover:bg-surface-container-high border-l-2 border-transparent hover:border-primary transition-all duration-300 p-8 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="font-mono text-[10px] text-zinc-500 tracking-widest uppercase">2024-03-30 // 11:10 AM</span>
+<span class="bg-surface-container-highest text-secondary text-[10px] font-mono px-2 py-1 uppercase tracking-tighter">Kariyer</span>
+</div>
+<h3 class="font-headline text-2xl font-bold uppercase mb-4">The Senior Engineer's Terminal Setup</h3>
+<p class="text-on-surface-variant mb-8 line-clamp-2">
+                        Why your local environment is your most powerful tool. A breakdown of my current dotfiles, shell aliases, and productivity macros.
+                    </p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-mono text-xs text-primary-fixed-dim">// READ_TIME: 10 MIN</span>
+<a class="p-2 hover:bg-primary/10 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined text-primary">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group bg-surface-container hover:bg-surface-container-high border-l-2 border-transparent hover:border-primary transition-all duration-300 p-8 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="font-mono text-[10px] text-zinc-500 tracking-widest uppercase">2024-03-12 // 09:00 AM</span>
+<span class="bg-surface-container-highest text-secondary text-[10px] font-mono px-2 py-1 uppercase tracking-tighter">Teknik</span>
+</div>
+<h3 class="font-headline text-2xl font-bold uppercase mb-4">Dockerizing Multi-Architecture Monorepos</h3>
+<p class="text-on-surface-variant mb-8 line-clamp-2">
+                        Handling ARM64 and AMD64 builds seamlessly using BuildKit and GitHub Actions for complex software ecosystems.
+                    </p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-mono text-xs text-primary-fixed-dim">// READ_TIME: 18 MIN</span>
+<a class="p-2 hover:bg-primary/10 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined text-primary">open_in_new</span>
+</a>
+</div>
+</article>
+</section>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-4 font-mono">
+<button class="px-4 py-2 border border-outline-variant/20 text-zinc-500 cursor-not-allowed">[ PREV ]</button>
+<button class="px-4 py-2 bg-primary/10 text-primary border border-primary/30">[ 01 ]</button>
+<button class="px-4 py-2 border border-outline-variant/20 text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">[ 02 ]</button>
+<button class="px-4 py-2 border border-outline-variant/20 text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">[ 03 ]</button>
+<button class="px-4 py-2 border border-outline-variant/20 text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">[ NEXT &gt; ]</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-emerald-500/10 bg-zinc-950 flex flex-col md:flex-row justify-between items-center px-12 gap-6">
+<div class="text-emerald-500 font-bold font-['JetBrains_Mono'] text-xs tracking-widest">
+            © 2024 SENTINEL_INTERFACE. ALL_RIGHTS_RESERVED.
+        </div>
+<div class="flex items-center gap-8">
+<span class="material-symbols-outlined text-zinc-500 hover:text-emerald-400 hover:glow-sm transition-all duration-200 cursor-pointer">code</span>
+<span class="material-symbols-outlined text-zinc-500 hover:text-emerald-400 hover:glow-sm transition-all duration-200 cursor-pointer">share</span>
+<span class="material-symbols-outlined text-zinc-500 hover:text-emerald-400 hover:glow-sm transition-all duration-200 cursor-pointer">terminal</span>
+<span class="material-symbols-outlined text-zinc-500 hover:text-emerald-400 hover:glow-sm transition-all duration-200 cursor-pointer">mail</span>
+</div>
+</footer>
+</body></html>

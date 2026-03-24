@@ -1,0 +1,34 @@
+{
+  "id": "proj-001",
+  "slug": "vesta-dashboard",
+  "title": "Vesta Dashboard",
+  "description": "Kapsamlı bir finansal yönetim dashboard'u. Kullanıcıların gelir-gider takibi yapmasına, bütçe oluşturmasına ve finansal hedefler belirlemesine olanak tanıyan modern bir web uygulaması.",
+  "shortDescription": "Finansal yönetim ve bütçe takip dashboard'u",
+  "thumbnail": "/images/projects/vesta-dashboard-thumb.jpg",
+  "images": [
+    "/images/projects/vesta-dashboard-1.jpg",
+    "/images/projects/vesta-dashboard-2.jpg"
+  ],
+  "category": "web",
+  "techStack": [
+    { "id": "ts-001", "name": "React", "category": "frontend" },
+    { "id": "ts-002", "name": "TypeScript", "category": "frontend" },
+    { "id": "ts-003", "name": "Tailwind CSS", "category": "frontend" },
+    { "id": "ts-004", "name": "Node.js", "category": "backend" },
+    { "id": "ts-005", "name": "PostgreSQL", "category": "database" }
+  ],
+  "liveUrl": "https://vesta-dashboard.demo.com",
+  "githubUrl": "https://github.com/hikmetgulsesli/vesta-dashboard",
+  "featured": true,
+  "publishedAt": "2024-03-15T10:00:00Z",
+  "status": "published",
+  "content": "# Vesta Dashboard\n\nBu proje...",
+  "challenges": "Kullanıcı deneyimi iyileştirmesi ve performans optimizasyonu",
+  "solutions": "React Suspense ve incremental static regeneration kullanıldı",
+  "results": "%40 hızlama ve %60 kullanıcı memnuniyeti artışı",
+  "client": "Vesta Financial",
+  "duration": "6 ay",
+  "sortOrder": 1,
+  "createdAt": "2024-01-10T08:00:00Z",
+  "updatedAt": "2024-03-15T10:00:00Z"
+}

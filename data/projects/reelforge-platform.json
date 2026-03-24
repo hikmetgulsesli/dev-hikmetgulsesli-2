@@ -1,0 +1,24 @@
+{
+  "id": "proj-003",
+  "slug": "reelforge-platform",
+  "title": "ReelForge Platform",
+  "description": "İçerik üreticileri için çok platformlu sosyal medya yönetim aracı. Instagram, TikTok ve YouTube için içerik takvimi, analitik ve otomatik paylaşım özellikleri.",
+  "shortDescription": "Çok platformlu sosyal medya yönetim aracı",
+  "thumbnail": "/images/projects/reelforge-thumb.jpg",
+  "images": ["/images/projects/reelforge-1.jpg"],
+  "category": "web",
+  "techStack": [
+    { "id": "ts-010", "name": "React", "category": "frontend" },
+    { "id": "ts-011", "name": "Node.js", "category": "backend" },
+    { "id": "ts-012", "name": "MongoDB", "category": "database" }
+  ],
+  "liveUrl": "https://reelforge.demo.com",
+  "githubUrl": "https://github.com/hikmetgulsesli/reelforge",
+  "featured": true,
+  "publishedAt": "2024-01-25T11:00:00Z",
+  "status": "published",
+  "content": "# ReelForge Platform\n\nSosyal medya yönetim aracı...",
+  "sortOrder": 3,
+  "createdAt": "2024-01-01T08:00:00Z",
+  "updatedAt": "2024-01-25T11:00:00Z"
+}

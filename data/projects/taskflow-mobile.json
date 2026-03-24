@@ -1,0 +1,24 @@
+{
+  "id": "proj-004",
+  "slug": "taskflow-mobile",
+  "title": "TaskFlow Mobile",
+  "description": "Flutter ile geliştirilmiş çapraz platform görev yönetimi uygulaması. Ekip işbirliği, deadline takibi ve bildirim sistemi ile üretkenliği artırır.",
+  "shortDescription": "Çapraz platform görev yönetimi uygulaması",
+  "thumbnail": "/images/projects/taskflow-mobile-thumb.jpg",
+  "images": ["/images/projects/taskflow-mobile-1.jpg"],
+  "category": "mobile",
+  "techStack": [
+    { "id": "ts-013", "name": "Flutter", "category": "mobile" },
+    { "id": "ts-014", "name": "Dart", "category": "mobile" },
+    { "id": "ts-015", "name": "Firebase", "category": "backend" }
+  ],
+  "liveUrl": "https://taskflow.demo.com",
+  "githubUrl": "https://github.com/hikmetgulsesli/taskflow-mobile",
+  "featured": false,
+  "publishedAt": "2024-04-10T09:00:00Z",
+  "status": "published",
+  "content": "# TaskFlow Mobile\n\nGörev yönetimi uygulaması...",
+  "sortOrder": 4,
+  "createdAt": "2024-03-01T08:00:00Z",
+  "updatedAt": "2024-04-10T09:00:00Z"
+}

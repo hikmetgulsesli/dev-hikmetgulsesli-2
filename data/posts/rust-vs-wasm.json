@@ -1,0 +1,34 @@
+{
+  "id": "post-003",
+  "slug": "rust-vs-wasm",
+  "title": "Rust vs WASM: The Performance Frontier",
+  "excerpt": "WebAssembly ve Rust'ın performans açısından karşılaştırması. Browser tabanlı hesaplama için ikili arasındaki avantaj ve dezavantajları inceliyoruz.",
+  "featuredImage": "/images/blog/rust-wasm-cover.jpg",
+  "category": "teknik",
+  "tags": ["rust", "wasm", "performance", "webassembly"],
+  "readTime": 15,
+  "publishedAt": "2024-08-12T10:00:00Z",
+  "status": "published",
+  "content": "# Rust vs WASM: The Performance Frontier\n\n## Introduction\n\n...",
+  "author": {
+    "id": "author-001",
+    "name": "Hikmet Güleşli",
+    "avatar": "/images/avatar.jpg",
+    "title": "Full-Stack Developer",
+    "bio": "Modern web teknolojileri ile dijital ürünler geliştiriyorum.",
+    "location": "Türkiye",
+    "social": {
+      "github": "https://github.com/hikmetgulsesli",
+      "linkedin": "https://linkedin.com/in/hikmetgulsesli",
+      "twitter": "https://twitter.com/hikmetgulsesli"
+    }
+  },
+  "featured": false,
+  "pinned": false,
+  "seo": {
+    "title": "Rust vs WASM: Performans Sınırı",
+    "description": "WebAssembly ve Rust performans karşılaştırması."
+  },
+  "createdAt": "2024-08-01T08:00:00Z",
+  "updatedAt": "2024-08-12T10:00:00Z"
+}

@@ -1,0 +1,26 @@
+=== US-004: Projects API ===
+COMPLETED: 2026-03-24T13:52:00+00:00
+FILES CHANGED: app/api/projects/route.ts, app/api/projects/[slug]/route.ts, app/api/projects/featured/route.ts, lib/projects.ts, data/projects/vesta-dashboard.json, data/projects/sentinel-monitor.json, data/projects/reelforge-platform.json, data/projects/taskflow-mobile.json, types/index.ts, tests/projects-api.test.ts, vitest.config.ts, vitest.setup.ts
+
+KEY DECISIONS:
+- Used file-system storage in data/projects/ directory for MVP
+- All API responses use ApiResponse<T> format
+- PaginatedResponse<T> used for list endpoints with pagination object
+- TypeScript types imported from types/index.ts (restored from us-003)
+- Limit enforced at API level (max 6 for featured)
+
+DEPENDENCIES ADDED:
+- vitest, @vitejs/plugin-react, @testing-library/jest-dom, jsdom (dev)
+
+ACCEPTANCE CRITERIA STATUS:
+✓ GET /api/projects returns PaginatedResponse<Project> with correct pagination fields
+✓ GET /api/projects?category=web filters correctly
+✓ GET /api/projects?featured=true returns only featured published projects
+✓ GET /api/projects?search=query performs case-insensitive search
+✓ GET /api/projects/nonexistent returns 404
+✓ GET /api/projects/featured returns max 6 items
+✓ Tests pass: 15 vitest tests passing
+✓ Typecheck passes: tsc --noEmit exits with 0
+✓ Build passes: next build completes successfully
+
+PR: https://github.com/hikmetgulsesli/dev-hikmetgulsesli-2/pull/7

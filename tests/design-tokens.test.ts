@@ -1,82 +1,148 @@
-import { describe, it, expect } from 'vitest'
+/**
+ * Tests for CSS Design Tokens
+ * Validates the Kinetic Console design system token structure
+ */
 
-describe('Design Tokens Configuration', () => {
-  // Colors from PRD
-  const designTokens = {
-    background: '#0a0a0f',
-    backgroundElevated: '#111113',
-    backgroundSubtle: '#1a1a1f',
-    primary: '#10b981',
-    primaryHover: '#059669',
-    accent: '#6366f1',
-    accentAlt: '#8b5cf6',
-    textPrimary: '#fafafa',
-    textSecondary: '#a1a1aa',
-    textMuted: '#6b7280',
-    border: '#27272a',
-    borderHover: '#3f3f46',
-    borderActive: '#10b981',
-    success: '#22c55e',
-    warning: '#f59e0b',
-    error: '#ef4444',
-    info: '#3b82f6',
+import { describe, expect, test } from 'vitest';
+import * as fs from 'fs';
+import * as path from 'path';
+
+// Parse CSS custom properties from globals.css
+// Handles both :root {} and @theme inline {} blocks
+function parseCSSVariables(): Record<string, string> {
+  const globalsCssPath = path.resolve(process.cwd(), 'app', 'globals.css');
+  const cssContent = fs.readFileSync(globalsCssPath, 'utf-8');
+
+  const vars: Record<string, string> = {};
+  
+  // Find @theme inline block with proper brace matching
+  const startMarker = '@theme inline';
+  const startIdx = cssContent.indexOf(startMarker);
+  
+  if (startIdx !== -1) {
+    // Find the opening brace after "@theme inline"
+    let openBrace = startIdx;
+    while (openBrace < cssContent.length && cssContent[openBrace] !== '{') {
+      openBrace++;
+    }
+    
+    let depth = 0;
+    let endIdx = openBrace;
+    
+    for (let i = openBrace; i < cssContent.length; i++) {
+      if (cssContent[i] === '{') depth++;
+      else if (cssContent[i] === '}') {
+        depth--;
+        if (depth === 0) {
+          endIdx = i;
+          break;
+        }
+      }
+    }
+    
+    const block = cssContent.substring(openBrace + 1, endIdx);
+    const matches = block.matchAll(/--([\w-]+):\s*([^;]+);/g);
+    for (const match of matches) {
+      vars[match[1]] = match[2].trim();
+    }
+  }
+  
+  return vars;
+}
+
+// Parse ::selection rule from globals.css
+function parseSelectionRule(): { exists: boolean; hasBackground: boolean; hasColor: boolean } {
+  const globalsCssPath = path.resolve(process.cwd(), 'app', 'globals.css');
+  const cssContent = fs.readFileSync(globalsCssPath, 'utf-8');
+
+  const selectionMatch = cssContent.match(/::selection\s*\{([^}]+)\}/);
+  if (!selectionMatch) {
+    return { exists: false, hasBackground: false, hasColor: false };
   }
 
-  it('background color is #0a0a0f', () => {
-    expect(designTokens.background).toBe('#0a0a0f')
-  })
+  const block = selectionMatch[1];
+  return {
+    exists: true,
+    hasBackground: block.includes('background') || block.includes('background-color'),
+    hasColor: block.includes('color'),
+  };
+}
 
-  it('primary color is #10b981 (emerald)', () => {
-    expect(designTokens.primary).toBe('#10b981')
-  })
+// Parse scrollbar styles to verify they're scoped properly
+function hasScrollbarStyles(): boolean {
+  const globalsCssPath = path.resolve(process.cwd(), 'app', 'globals.css');
+  const cssContent = fs.readFileSync(globalsCssPath, 'utf-8');
+  
+  // Check for webkit-scrollbar styles
+  return cssContent.includes('::-webkit-scrollbar');
+}
 
-  it('accent color is #6366f1 (indigo)', () => {
-    expect(designTokens.accent).toBe('#6366f1')
-  })
+// Parse reduced motion media query
+function hasReducedMotionSupport(): boolean {
+  const globalsCssPath = path.resolve(process.cwd(), 'app', 'globals.css');
+  const cssContent = fs.readFileSync(globalsCssPath, 'utf-8');
+  
+  return cssContent.includes('prefers-reduced-motion');
+}
 
-  it('accent-alt color is #8b5cf6 (violet)', () => {
-    expect(designTokens.accentAlt).toBe('#8b5cf6')
-  })
+const cssVars = parseCSSVariables();
+const selectionRule = parseSelectionRule();
 
-  it('text primary is #fafafa', () => {
-    expect(designTokens.textPrimary).toBe('#fafafa')
-  })
+describe('Design Token Structure', () => {
+  test('has color-background mapped', () => {
+    expect(cssVars['color-background']).toBeDefined();
+    expect(cssVars['color-background']).toBe('var(--background)');
+  });
 
-  it('border color is #27272a', () => {
-    expect(designTokens.border).toBe('#27272a')
-  })
+  test('has color-primary mapped', () => {
+    expect(cssVars['color-primary']).toBeDefined();
+    expect(cssVars['color-primary']).toBe('var(--primary)');
+  });
 
-  it('all status colors are defined', () => {
-    expect(designTokens.success).toBe('#22c55e')
-    expect(designTokens.warning).toBe('#f59e0b')
-    expect(designTokens.error).toBe('#ef4444')
-    expect(designTokens.info).toBe('#3b82f6')
-  })
-})
+  test('has color-accent mapped', () => {
+    expect(cssVars['color-accent']).toBeDefined();
+    expect(cssVars['color-accent']).toBe('var(--accent)');
+  });
 
-describe('Tailwind Theme Variables', () => {
-  const tailwindVars = {
-    'color-background': 'var(--background)',
-    'color-primary': 'var(--primary)',
-    'color-accent': 'var(--accent)',
-    'color-text-primary': 'var(--text-primary)',
-    'color-border': 'var(--border)',
-    'font-heading': 'var(--font-heading)',
-    'font-body': 'var(--font-body)',
-    'font-mono': 'var(--font-mono)',
-  }
+  test('has color-text-primary mapped', () => {
+    expect(cssVars['color-text-primary']).toBeDefined();
+  });
 
-  it('CSS variables are properly mapped', () => {
-    expect(tailwindVars['color-background']).toBe('var(--background)')
-    expect(tailwindVars['color-primary']).toBe('var(--primary)')
-    expect(tailwindVars['color-accent']).toBe('var(--accent)')
-    expect(tailwindVars['color-text-primary']).toBe('var(--text-primary)')
-    expect(tailwindVars['color-border']).toBe('var(--border)')
-  })
+  test('has color-border mapped', () => {
+    expect(cssVars['color-border']).toBeDefined();
+  });
 
-  it('font families are mapped', () => {
-    expect(tailwindVars['font-heading']).toBe('var(--font-heading)')
-    expect(tailwindVars['font-body']).toBe('var(--font-body)')
-    expect(tailwindVars['font-mono']).toBe('var(--font-mono)')
-  })
-})
+  test('has status colors mapped', () => {
+    expect(cssVars['color-success']).toBeDefined();
+    expect(cssVars['color-warning']).toBeDefined();
+    expect(cssVars['color-error']).toBeDefined();
+  });
+
+  test('design tokens reference base variables', () => {
+    // All color-* vars should reference base vars
+    expect(cssVars['color-primary']).toMatch(/^var\(--/);
+  });
+});
+
+describe('Selection Styling', () => {
+  test('selection rule exists in globals.css', () => {
+    expect(selectionRule.exists).toBe(true);
+  });
+
+  test('selection has background-color and color', () => {
+    expect(selectionRule.hasBackground).toBe(true);
+    expect(selectionRule.hasColor).toBe(true);
+  });
+});
+
+describe('Scrollbar Styling', () => {
+  test('custom scrollbar styles exist', () => {
+    expect(hasScrollbarStyles()).toBe(true);
+  });
+});
+
+describe('Accessibility', () => {
+  test('reduced motion support exists', () => {
+    expect(hasReducedMotionSupport()).toBe(true);
+  });
+});

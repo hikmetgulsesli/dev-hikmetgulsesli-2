@@ -87,6 +87,7 @@
   /* Shadcn defaults - overridden for dark theme */
   --background: #0a0a0f;
   --foreground: #fafafa;
+  --color-foreground: var(--foreground);
   --card: #111113;
   --card-foreground: #fafafa;
   --popover: #111113;
@@ -261,9 +262,10 @@ code, pre, kbd, samp {
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border);
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
   }
 }

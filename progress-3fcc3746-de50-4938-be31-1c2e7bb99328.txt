@@ -1,6 +1,6 @@
-=== US-003: TypeScript types and data models ===
-COMPLETED: 2026-03-24T13:23:47+00:00
-FILES CHANGED: types/index.ts, types/validation.ts, __tests__/types.test.ts, __tests__/validation.test.ts
-KEY DECISIONS: All interfaces defined per PRD v3 spec; Zod schema supports Turkish characters for names; 57 tests covering all interfaces and validation edge cases
-DEPENDENCIES ADDED: zod (already present in project)
-PR_URL: https://github.com/setrox/dev-hikmetgulsesli/pull/4
+=== US-011: Avatar, Lightbox, and Cursor Glow components ===
+COMPLETED: 2026-03-24T17:52:00+00:00
+FILES CHANGED: components/ui/avatar.tsx, components/ui/lightbox.tsx, components/ui/cursor-glow.tsx, __tests__/components/avatar.test.tsx, __tests__/components/lightbox.test.tsx, __tests__/components/cursor-glow.test.tsx, vitest.config.ts
+KEY DECISIONS: Used framer-motion for Avatar hover animations and CursorGlow spring smoothing; Lightbox uses AnimatePresence for mount/unmount animations with keyboard event handlers; Touch device detection via navigator.maxTouchPoints
+DEPENDENCIES ADDED: none (all dependencies already present)
+PR_URL: https://github.com/hikmetgulsesli/dev-hikmetgulsesli-2/pull/14

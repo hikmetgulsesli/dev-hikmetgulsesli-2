@@ -1,26 +1,25 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, JetBrains_Mono, Geist } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+  variable: "--font-headline",
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
 const inter = Inter({
-  variable: "--font-inter",
+  variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+  variable: "--font-mono",
   subsets: ["latin"],
   weight: ["400", "500"],
   display: "swap",
@@ -48,14 +47,9 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: "https://hikmetgulsesli.com",
     siteName: "Hikmet Güleşli",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Hikmet Güleşli - Full-Stack Developer",
-      },
-    ],
+    title: "Hikmet Güleşli - Full-Stack Developer",
+    description:
+      "Hikmet Güleşli - Full-Stack Developer, UI/UX Designer. Modern web teknolojileri ile dijital ürünler geliştiriyorum.",
   },
   twitter: {
     card: "summary_large_image",
@@ -73,9 +67,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "https://hikmetgulsesli.com",
-  },
 };
 
 export default function RootLayout({
@@ -84,11 +75,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="tr"
-      className={cn(spaceGrotesk.variable, inter.variable, jetbrainsMono.variable, "font-sans", geist.variable)}
-    >
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+    <html lang="tr" className="dark">
+      <body
+        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} min-h-screen flex flex-col bg-[var(--background)] text-[var(--on-surface)] antialiased`}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

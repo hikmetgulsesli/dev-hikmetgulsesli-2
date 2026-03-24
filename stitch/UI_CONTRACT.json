@@ -1,0 +1,2155 @@
+[
+  {
+    "screenId": "51b4e4fe81134726a68bfde925028f6d",
+    "screenTitle": "Projeler - Hikmet Güleşli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "STACK",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "ARCHIVE",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "CONTACT",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 345
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 346
+      },
+      {
+        "type": "link",
+        "label": "TWITTER",
+        "href": "#",
+        "line": 347
+      },
+      {
+        "type": "link",
+        "label": "EMAIL",
+        "href": "#",
+        "line": 348
+      },
+      {
+        "type": "button",
+        "label": "RESUME.PDF",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "TÜMÜ",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "WEB",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "MOBİL",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "AÇIK KAYNAK",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "FREELANCE",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 261
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 264
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 287
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 313
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 316
+      },
+      {
+        "type": "button",
+        "label": "&gt; BAŞLATALIM",
+        "line": 332
+      },
+      {
+        "type": "button",
+        "label": "[icon: search]",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 265
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 317
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 326
+      },
+      {
+        "type": "input",
+        "label": "Proje Ara...",
+        "inputType": "text",
+        "placeholder": "Proje Ara...",
+        "line": 154
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "STACK",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "ARCHIVE",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "CONTACT",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 345
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 346
+      },
+      {
+        "type": "link",
+        "label": "TWITTER",
+        "href": "#",
+        "line": 347
+      },
+      {
+        "type": "link",
+        "label": "EMAIL",
+        "href": "#",
+        "line": 348
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "RESUME.PDF",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "TÜMÜ",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "WEB",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "MOBİL",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "AÇIK KAYNAK",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "FREELANCE",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 261
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 264
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 287
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "// GITHUB",
+        "line": 313
+      },
+      {
+        "type": "button",
+        "label": "DEMO chevron_right",
+        "line": 316
+      },
+      {
+        "type": "button",
+        "label": "&gt; BAŞLATALIM",
+        "line": 332
+      },
+      {
+        "type": "button",
+        "label": "[icon: search]",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 265
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "[icon: chevron_right]",
+        "line": 317
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 326
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Proje Ara...",
+        "inputType": "text",
+        "placeholder": "Proje Ara...",
+        "line": 154
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 36,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "901b07591d984879a0f28a7e1279825b",
+    "screenTitle": "Proje Detay - Vesta Dashboard",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 101
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM",
+        "href": "#",
+        "line": 102
+      },
+      {
+        "type": "link",
+        "label": "LOGS",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "CLAW AGENT SDK\n                    east",
+        "href": "#",
+        "line": 284
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 299
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 300
+      },
+      {
+        "type": "link",
+        "label": "SOURCE",
+        "href": "#",
+        "line": 301
+      },
+      {
+        "type": "button",
+        "label": "terminal",
+        "line": 106
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 109
+      },
+      {
+        "type": "button",
+        "label": "// VIEW_LIVE_DEMO\n                        arrow_forward",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "&gt;_ SOURCE_CODE_GITHUB",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 107
+      },
+      {
+        "type": "button",
+        "label": "[icon: settings]",
+        "line": 110
+      },
+      {
+        "type": "button",
+        "label": "[icon: arrow_forward]",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "[icon: data_object]",
+        "line": 200
+      },
+      {
+        "type": "button",
+        "label": "[icon: palette]",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "[icon: memory]",
+        "line": 210
+      },
+      {
+        "type": "button",
+        "label": "[icon: insights]",
+        "line": 215
+      },
+      {
+        "type": "button",
+        "label": "[icon: smartphone]",
+        "line": 262
+      },
+      {
+        "type": "button",
+        "label": "[icon: dark_mode]",
+        "line": 271
+      },
+      {
+        "type": "button",
+        "label": "[icon: east]",
+        "line": 287
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 101
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM",
+        "href": "#",
+        "line": 102
+      },
+      {
+        "type": "link",
+        "label": "LOGS",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "CLAW AGENT SDK\n                    east",
+        "href": "#",
+        "line": 284
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 299
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 300
+      },
+      {
+        "type": "link",
+        "label": "SOURCE",
+        "href": "#",
+        "line": 301
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "terminal",
+        "line": 106
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 109
+      },
+      {
+        "type": "button",
+        "label": "// VIEW_LIVE_DEMO\n                        arrow_forward",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "&gt;_ SOURCE_CODE_GITHUB",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 107
+      },
+      {
+        "type": "button",
+        "label": "[icon: settings]",
+        "line": 110
+      },
+      {
+        "type": "button",
+        "label": "[icon: arrow_forward]",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "[icon: data_object]",
+        "line": 200
+      },
+      {
+        "type": "button",
+        "label": "[icon: palette]",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "[icon: memory]",
+        "line": 210
+      },
+      {
+        "type": "button",
+        "label": "[icon: insights]",
+        "line": 215
+      },
+      {
+        "type": "button",
+        "label": "[icon: smartphone]",
+        "line": 262
+      },
+      {
+        "type": "button",
+        "label": "[icon: dark_mode]",
+        "line": 271
+      },
+      {
+        "type": "button",
+        "label": "[icon: east]",
+        "line": 287
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 22,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "6179c8995f1c4f3b9d442717d40735dc",
+    "screenTitle": "Blog - Hikmet Güleşli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 101
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 102
+      },
+      {
+        "type": "link",
+        "label": "Archive",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 104
+      },
+      {
+        "type": "link",
+        "label": "[ READ_FULL_ENTRY ]\narrow_forward",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 179
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 198
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 217
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "Tümü",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "Teknik",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Kariyer",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "Kişisel",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "Tutorial",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "[ PREV ]",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "[ 01 ]",
+        "line": 245
+      },
+      {
+        "type": "button",
+        "label": "[ 02 ]",
+        "line": 246
+      },
+      {
+        "type": "button",
+        "label": "[ 03 ]",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "[ NEXT &gt; ]",
+        "line": 248
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 107
+      },
+      {
+        "type": "button",
+        "label": "[icon: arrow_forward]",
+        "line": 151
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 180
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 218
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "[icon: code]",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "[icon: share]",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "[icon: mail]",
+        "line": 260
+      },
+      {
+        "type": "input",
+        "label": "EXECUTE_SEARCH --query ",
+        "inputType": "text",
+        "placeholder": "EXECUTE_SEARCH --query ",
+        "line": 125
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 101
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 102
+      },
+      {
+        "type": "link",
+        "label": "Archive",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 104
+      },
+      {
+        "type": "link",
+        "label": "[ READ_FULL_ENTRY ]\narrow_forward",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 179
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 198
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 217
+      },
+      {
+        "type": "link",
+        "label": "open_in_new",
+        "href": "#",
+        "line": 236
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Tümü",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "Teknik",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Kariyer",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "Kişisel",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "Tutorial",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "[ PREV ]",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "[ 01 ]",
+        "line": 245
+      },
+      {
+        "type": "button",
+        "label": "[ 02 ]",
+        "line": 246
+      },
+      {
+        "type": "button",
+        "label": "[ 03 ]",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "[ NEXT &gt; ]",
+        "line": 248
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 107
+      },
+      {
+        "type": "button",
+        "label": "[icon: arrow_forward]",
+        "line": 151
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 180
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 218
+      },
+      {
+        "type": "button",
+        "label": "[icon: open_in_new]",
+        "line": 237
+      },
+      {
+        "type": "button",
+        "label": "[icon: code]",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "[icon: share]",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "[icon: mail]",
+        "line": 260
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "EXECUTE_SEARCH --query ",
+        "inputType": "text",
+        "placeholder": "EXECUTE_SEARCH --query ",
+        "line": 125
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 30,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ffd88b8781484c53936ffd6726b509ee",
+    "screenTitle": "Blog Detay - Hikmet Güleşli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 109
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Archive",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "01. Introduction",
+        "href": "#introduction",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "02. Identifying Bottlenecks",
+        "href": "#bottlenecks",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "03. Rendering Strategies",
+        "href": "#rendering-optimization",
+        "line": 147
+      },
+      {
+        "type": "link",
+        "label": "04. Memoization Patterns",
+        "href": "#memoization-patterns",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "05. Concurrent React",
+        "href": "#concurrency",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "brand_awareness",
+        "href": "#",
+        "line": 237
+      },
+      {
+        "type": "link",
+        "label": "code",
+        "href": "#",
+        "line": 240
+      },
+      {
+        "type": "link",
+        "label": "alternate_email",
+        "href": "#",
+        "line": 243
+      },
+      {
+        "type": "link",
+        "label": "VIEW_ALL_LOGS\n          arrow_forward",
+        "href": "#",
+        "line": 261
+      },
+      {
+        "type": "link",
+        "label": "Aug 12 // INFRA\nRust vs WASM: The Performance Frontier\nExploration of binary compilation targets for browser-based computation...",
+        "href": "#",
+        "line": 268
+      },
+      {
+        "type": "link",
+        "label": "Jul 05 // SYSTEM\nCustom Hooks for Real-time WebSockets\nHow to manage complex socket states without flooding the main thread...",
+        "href": "#",
+        "line": 274
+      },
+      {
+        "type": "link",
+        "label": "Jun 28 // DESIGN\nThe Death of Minimalism in UI\nWhy density and data-rich interfaces are returning to the mainstream...",
+        "href": "#",
+        "line": 280
+      },
+      {
+        "type": "link",
+        "label": "GitHub",
+        "href": "#",
+        "line": 295
+      },
+      {
+        "type": "link",
+        "label": "LinkedIn",
+        "href": "#",
+        "line": 296
+      },
+      {
+        "type": "link",
+        "label": "Twitter",
+        "href": "#",
+        "line": 297
+      },
+      {
+        "type": "link",
+        "label": "Email",
+        "href": "#",
+        "line": 298
+      },
+      {
+        "type": "button",
+        "label": "terminal",
+        "line": 115
+      },
+      {
+        "type": "button",
+        "label": "content_copy\nCOPY",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 116
+      },
+      {
+        "type": "button",
+        "label": "[icon: content_copy]",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "[icon: brand_awareness]",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "[icon: code]",
+        "line": 241
+      },
+      {
+        "type": "button",
+        "label": "[icon: alternate_email]",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "[icon: arrow_forward]",
+        "line": 263
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 109
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Archive",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "01. Introduction",
+        "href": "#introduction",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "02. Identifying Bottlenecks",
+        "href": "#bottlenecks",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "03. Rendering Strategies",
+        "href": "#rendering-optimization",
+        "line": 147
+      },
+      {
+        "type": "link",
+        "label": "04. Memoization Patterns",
+        "href": "#memoization-patterns",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "05. Concurrent React",
+        "href": "#concurrency",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "brand_awareness",
+        "href": "#",
+        "line": 237
+      },
+      {
+        "type": "link",
+        "label": "code",
+        "href": "#",
+        "line": 240
+      },
+      {
+        "type": "link",
+        "label": "alternate_email",
+        "href": "#",
+        "line": 243
+      },
+      {
+        "type": "link",
+        "label": "VIEW_ALL_LOGS\n          arrow_forward",
+        "href": "#",
+        "line": 261
+      },
+      {
+        "type": "link",
+        "label": "Aug 12 // INFRA\nRust vs WASM: The Performance Frontier\nExploration of binary compilation targets for browser-based computation...",
+        "href": "#",
+        "line": 268
+      },
+      {
+        "type": "link",
+        "label": "Jul 05 // SYSTEM\nCustom Hooks for Real-time WebSockets\nHow to manage complex socket states without flooding the main thread...",
+        "href": "#",
+        "line": 274
+      },
+      {
+        "type": "link",
+        "label": "Jun 28 // DESIGN\nThe Death of Minimalism in UI\nWhy density and data-rich interfaces are returning to the mainstream...",
+        "href": "#",
+        "line": 280
+      },
+      {
+        "type": "link",
+        "label": "GitHub",
+        "href": "#",
+        "line": 295
+      },
+      {
+        "type": "link",
+        "label": "LinkedIn",
+        "href": "#",
+        "line": 296
+      },
+      {
+        "type": "link",
+        "label": "Twitter",
+        "href": "#",
+        "line": 297
+      },
+      {
+        "type": "link",
+        "label": "Email",
+        "href": "#",
+        "line": 298
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "terminal",
+        "line": 115
+      },
+      {
+        "type": "button",
+        "label": "content_copy\nCOPY",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 116
+      },
+      {
+        "type": "button",
+        "label": "[icon: content_copy]",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "[icon: brand_awareness]",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "[icon: code]",
+        "line": 241
+      },
+      {
+        "type": "button",
+        "label": "[icon: alternate_email]",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "[icon: arrow_forward]",
+        "line": 263
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 28,
+    "requiresRouter": true,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "9a31eab4d152451399485299e1a65cf3",
+    "screenTitle": "Hakkında - Hikmet Güleşli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 92
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 93
+      },
+      {
+        "type": "link",
+        "label": "Archive",
+        "href": "#",
+        "line": 94
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 95
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 283
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 284
+      },
+      {
+        "type": "link",
+        "label": "STACK_OVERFLOW",
+        "href": "#",
+        "line": 285
+      },
+      {
+        "type": "button",
+        "label": "RESUME.EXE",
+        "line": 97
+      },
+      {
+        "type": "button",
+        "label": "download\nDOWNLOAD CV.EXE",
+        "line": 268
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "[icon: palette]",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "[icon: memory]",
+        "line": 219
+      },
+      {
+        "type": "button",
+        "label": "[icon: database]",
+        "line": 228
+      },
+      {
+        "type": "button",
+        "label": "[icon: cloud]",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "[icon: rocket_launch]",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "[icon: download]",
+        "line": 269
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 127
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 92
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 93
+      },
+      {
+        "type": "link",
+        "label": "Archive",
+        "href": "#",
+        "line": 94
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 95
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 283
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 284
+      },
+      {
+        "type": "link",
+        "label": "STACK_OVERFLOW",
+        "href": "#",
+        "line": 285
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "RESUME.EXE",
+        "line": 97
+      },
+      {
+        "type": "button",
+        "label": "download\nDOWNLOAD CV.EXE",
+        "line": 268
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "[icon: palette]",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "[icon: memory]",
+        "line": 219
+      },
+      {
+        "type": "button",
+        "label": "[icon: database]",
+        "line": 228
+      },
+      {
+        "type": "button",
+        "label": "[icon: cloud]",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "[icon: rocket_launch]",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "[icon: download]",
+        "line": 269
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 127
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 17,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "0539313873cb412d9d0b86ff0961a9ef",
+    "screenTitle": "İletişim - Hikmet Güleşli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Home",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 113
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 114
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "mail\n\n\nEmail\nhikmet@example.com\n\n\nnorth_east",
+        "href": "mailto:hikmet@example.com",
+        "line": 188
+      },
+      {
+        "type": "link",
+        "label": "Privacy",
+        "href": "#",
+        "line": 256
+      },
+      {
+        "type": "link",
+        "label": "Security",
+        "href": "#",
+        "line": 257
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 258
+      },
+      {
+        "type": "link",
+        "label": "home\nHome",
+        "href": "#",
+        "line": 268
+      },
+      {
+        "type": "link",
+        "label": "terminal\nProjects",
+        "href": "#",
+        "line": 272
+      },
+      {
+        "type": "link",
+        "label": "layers\nStack",
+        "href": "#",
+        "line": 276
+      },
+      {
+        "type": "link",
+        "label": "alternate_email\nContact",
+        "href": "#",
+        "line": 280
+      },
+      {
+        "type": "button",
+        "label": "// TERMINAL_LOGIN",
+        "line": 118
+      },
+      {
+        "type": "button",
+        "label": "TRANSMIT_MESSAGE\nsend",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "[icon: settings_ethernet]",
+        "line": 141
+      },
+      {
+        "type": "button",
+        "label": "[icon: send]",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "[icon: mail]",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "[icon: north_east]",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "[icon: location_on]",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "[icon: home]",
+        "line": 269
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 273
+      },
+      {
+        "type": "button",
+        "label": "[icon: layers]",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "[icon: alternate_email]",
+        "line": 281
+      },
+      {
+        "type": "input",
+        "label": "NULL",
+        "inputType": "text",
+        "placeholder": "NULL",
+        "line": 147
+      },
+      {
+        "type": "input",
+        "label": "NULL",
+        "inputType": "text",
+        "placeholder": "NULL",
+        "line": 151
+      },
+      {
+        "type": "input",
+        "label": "USER@DOMAIN.COM",
+        "inputType": "email",
+        "placeholder": "USER@DOMAIN.COM",
+        "line": 156
+      },
+      {
+        "type": "input",
+        "label": "PROJECT_ENQUIRY",
+        "inputType": "text",
+        "placeholder": "PROJECT_ENQUIRY",
+        "line": 160
+      },
+      {
+        "type": "input",
+        "label": "ENTER_DATA...",
+        "inputType": "textarea",
+        "placeholder": "ENTER_DATA...",
+        "line": 164
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 143
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Home",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Projects",
+        "href": "#",
+        "line": 113
+      },
+      {
+        "type": "link",
+        "label": "Stack",
+        "href": "#",
+        "line": 114
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Contact",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "mail\n\n\nEmail\nhikmet@example.com\n\n\nnorth_east",
+        "href": "mailto:hikmet@example.com",
+        "line": 188
+      },
+      {
+        "type": "link",
+        "label": "Privacy",
+        "href": "#",
+        "line": 256
+      },
+      {
+        "type": "link",
+        "label": "Security",
+        "href": "#",
+        "line": 257
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 258
+      },
+      {
+        "type": "link",
+        "label": "home\nHome",
+        "href": "#",
+        "line": 268
+      },
+      {
+        "type": "link",
+        "label": "terminal\nProjects",
+        "href": "#",
+        "line": 272
+      },
+      {
+        "type": "link",
+        "label": "layers\nStack",
+        "href": "#",
+        "line": 276
+      },
+      {
+        "type": "link",
+        "label": "alternate_email\nContact",
+        "href": "#",
+        "line": 280
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "// TERMINAL_LOGIN",
+        "line": 118
+      },
+      {
+        "type": "button",
+        "label": "TRANSMIT_MESSAGE\nsend",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "[icon: settings_ethernet]",
+        "line": 141
+      },
+      {
+        "type": "button",
+        "label": "[icon: send]",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "[icon: mail]",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "[icon: north_east]",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "[icon: location_on]",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "[icon: home]",
+        "line": 269
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 273
+      },
+      {
+        "type": "button",
+        "label": "[icon: layers]",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "[icon: alternate_email]",
+        "line": 281
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "NULL",
+        "inputType": "text",
+        "placeholder": "NULL",
+        "line": 147
+      },
+      {
+        "type": "input",
+        "label": "NULL",
+        "inputType": "text",
+        "placeholder": "NULL",
+        "line": 151
+      },
+      {
+        "type": "input",
+        "label": "USER@DOMAIN.COM",
+        "inputType": "email",
+        "placeholder": "USER@DOMAIN.COM",
+        "line": 156
+      },
+      {
+        "type": "input",
+        "label": "PROJECT_ENQUIRY",
+        "inputType": "text",
+        "placeholder": "PROJECT_ENQUIRY",
+        "line": 160
+      },
+      {
+        "type": "input",
+        "label": "ENTER_DATA...",
+        "inputType": "textarea",
+        "placeholder": "ENTER_DATA...",
+        "line": 164
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 30,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "0da9a09fb1e44e77824f0b81fe565023",
+    "screenTitle": "Ana Sayfa",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 100
+      },
+      {
+        "type": "link",
+        "label": "STACK",
+        "href": "#",
+        "line": 101
+      },
+      {
+        "type": "link",
+        "label": "ARCHIVE",
+        "href": "#",
+        "line": 102
+      },
+      {
+        "type": "link",
+        "label": "CONTACT",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "terminal GITHUB",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "share LINKEDIN",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "alternate_email X_SOCIAL",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "Tümünü Gör →",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 275
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 276
+      },
+      {
+        "type": "link",
+        "label": "SOURCE_CODE",
+        "href": "#",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "DOWNLOAD_CV",
+        "line": 105
+      },
+      {
+        "type": "button",
+        "label": "// Hakkımda Bilgi Al",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "&gt; Projeleri Gör",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "mail İletişime Geç",
+        "line": 260
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "[icon: share]",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "[icon: alternate_email]",
+        "line": 150
+      },
+      {
+        "type": "button",
+        "label": "[icon: expand_more]",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "[icon: schedule]",
+        "line": 229
+      },
+      {
+        "type": "button",
+        "label": "[icon: schedule]",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "[icon: schedule]",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "[icon: mail]",
+        "line": 261
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "PROJECTS",
+        "href": "#",
+        "line": 100
+      },
+      {
+        "type": "link",
+        "label": "STACK",
+        "href": "#",
+        "line": 101
+      },
+      {
+        "type": "link",
+        "label": "ARCHIVE",
+        "href": "#",
+        "line": 102
+      },
+      {
+        "type": "link",
+        "label": "CONTACT",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "terminal GITHUB",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "share LINKEDIN",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "alternate_email X_SOCIAL",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "Tümünü Gör →",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "GITHUB",
+        "href": "#",
+        "line": 275
+      },
+      {
+        "type": "link",
+        "label": "LINKEDIN",
+        "href": "#",
+        "line": 276
+      },
+      {
+        "type": "link",
+        "label": "SOURCE_CODE",
+        "href": "#",
+        "line": 277
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "DOWNLOAD_CV",
+        "line": 105
+      },
+      {
+        "type": "button",
+        "label": "// Hakkımda Bilgi Al",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "&gt; Projeleri Gör",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "mail İletişime Geç",
+        "line": 260
+      },
+      {
+        "type": "button",
+        "label": "[icon: terminal]",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "[icon: share]",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "[icon: alternate_email]",
+        "line": 150
+      },
+      {
+        "type": "button",
+        "label": "[icon: expand_more]",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "[icon: schedule]",
+        "line": 229
+      },
+      {
+        "type": "button",
+        "label": "[icon: schedule]",
+        "line": 238
+      },
+      {
+        "type": "button",
+        "label": "[icon: schedule]",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "[icon: mail]",
+        "line": 261
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 23,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]

@@ -65,8 +65,12 @@ describe('TypeScript Interfaces', () => {
 
     it('should accept all category values', () => {
       const categories: TechItem['category'][] = ['frontend', 'backend', 'database', 'devops', 'tool', 'mobile'];
+      const baseTech: Omit<TechItem, 'category'> = {
+        id: 'tech-1',
+        name: 'Test',
+      };
       categories.forEach((cat) => {
-        const tech: TechItem = { id: '1', name: 'Test', category: cat };
+        const tech: TechItem = { ...baseTech, category: cat };
         expect(tech.category).toBe(cat);
       });
     });
@@ -98,14 +102,15 @@ describe('TypeScript Interfaces', () => {
 
     it('should accept all category values', () => {
       const categories: Project['category'][] = ['web', 'mobile', 'open-source', 'freelance'];
+      const baseProject: Omit<Project, 'category'> = {
+        id: '1', slug: 'test', title: 'Test', description: 'Desc',
+        shortDescription: 'Short', thumbnail: '', images: [],
+        techStack: [], featured: false,
+        publishedAt: '2024-01-01', status: 'draft',
+        content: '', createdAt: '2024-01-01', updatedAt: '2024-01-01',
+      };
       categories.forEach((cat) => {
-        const project: Project = {
-          id: '1', slug: 'test', title: 'Test', description: 'Desc',
-          shortDescription: 'Short', thumbnail: '', images: [],
-          category: cat, techStack: [], featured: false,
-          publishedAt: '2024-01-01', status: 'draft',
-          content: '', createdAt: '2024-01-01', updatedAt: '2024-01-01',
-        };
+        const project: Project = { ...baseProject, category: cat };
         expect(project.category).toBe(cat);
       });
     });
@@ -114,7 +119,6 @@ describe('TypeScript Interfaces', () => {
   describe('Author', () => {
     it('should have correct fields', () => {
       const author: Author = {
-        id: 'auth-1',
         name: 'Hikmet Güleşli',
         avatar: '/avatar.png',
         title: 'Full-Stack Developer',
@@ -170,7 +174,6 @@ describe('TypeScript Interfaces', () => {
         status: 'published',
         content: '# Blog Content',
         author: {
-          id: 'auth-1',
           name: 'Hikmet Güleşli',
           avatar: '/avatar.png',
           title: 'Developer',
@@ -189,15 +192,16 @@ describe('TypeScript Interfaces', () => {
 
     it('should accept all category values', () => {
       const categories: BlogPost['category'][] = ['teknik', 'career', 'kisisel', 'tutorial'];
+      const basePost: Omit<BlogPost, 'category'> = {
+        id: '1', slug: 'test', title: 'Test', excerpt: 'Excerpt',
+        category: 'teknik', tags: [], readTime: 5, publishedAt: '2024-01-01',
+        status: 'published', content: '', author: {
+          name: 'Test', avatar: '', title: 'T', bio: 'B', social: {},
+        },
+        featured: false, pinned: false, createdAt: '2024-01-01', updatedAt: '2024-01-01',
+      };
       categories.forEach((cat) => {
-        const post: BlogPost = {
-          id: '1', slug: 'test', title: 'Test', excerpt: 'Excerpt',
-          category: cat, tags: [], readTime: 5, publishedAt: '2024-01-01',
-          status: 'published', content: '', author: {
-            id: '1', name: 'Test', avatar: '', title: 'T', bio: 'B', social: {},
-          },
-          featured: false, pinned: false, createdAt: '2024-01-01', updatedAt: '2024-01-01',
-        };
+        const post: BlogPost = { ...basePost, category: cat };
         expect(post.category).toBe(cat);
       });
     });
@@ -240,6 +244,23 @@ describe('TypeScript Interfaces', () => {
       expect(exp.current).toBe(true);
       expect(exp.endDate).toBeUndefined();
     });
+
+    it('should allow null endDate for current positions', () => {
+      const exp: Experience = {
+        id: 'exp-1',
+        title: 'Developer',
+        company: 'Current Corp',
+        startDate: '2024-01',
+        endDate: null,
+        current: true,
+        description: 'Working here',
+        type: 'full-time',
+        createdAt: '2024-01-01',
+        updatedAt: '2024-01-01',
+      };
+      expect(exp.current).toBe(true);
+      expect(exp.endDate).toBeNull();
+    });
   });
 
   describe('Education', () => {
@@ -279,8 +300,12 @@ describe('TypeScript Interfaces', () => {
 
     it('should accept all category values', () => {
       const categories: Skill['category'][] = ['frontend', 'backend', 'database', 'devops', 'mobile', 'design', 'soft-skills'];
+      const baseSkill: Omit<Skill, 'category'> = {
+        id: 'skill-1',
+        name: 'Test',
+      };
       categories.forEach((cat) => {
-        const skill: Skill = { id: '1', name: 'Test', category: cat };
+        const skill: Skill = { ...baseSkill, category: cat };
         expect(skill.category).toBe(cat);
       });
     });
@@ -320,12 +345,13 @@ describe('TypeScript Interfaces', () => {
 
     it('should accept all status values', () => {
       const statuses: ContactSubmission['status'][] = ['new', 'read', 'replied', 'archived'];
+      const baseSubmission: Omit<ContactSubmission, 'status'> = {
+        id: '1', firstName: 'T', lastName: 'T', email: 't@t.com',
+        subject: 'Test', message: 'Test message here 20 chars+',
+        submittedAt: '2024-01-01',
+      };
       statuses.forEach((status) => {
-        const sub: ContactSubmission = {
-          id: '1', firstName: 'T', lastName: 'T', email: 't@t.com',
-          subject: 'Test', message: 'Test message here 20 chars+',
-          submittedAt: '2024-01-01', status,
-        };
+        const sub: ContactSubmission = { ...baseSubmission, status };
         expect(sub.status).toBe(status);
       });
     });
@@ -420,7 +446,7 @@ describe('TypeScript Interfaces', () => {
             id: '1', slug: 'post-1', title: 'Post 1', excerpt: 'Excerpt',
             category: 'teknik', tags: [], readTime: 5, publishedAt: '2024-01-01',
             status: 'published', content: '', author: {
-              id: '1', name: 'Test', avatar: '', title: 'T', bio: 'B', social: {},
+              name: 'Test', avatar: '', title: 'T', bio: 'B', social: {},
             },
             featured: false, pinned: false, createdAt: '2024-01-01', updatedAt: '2024-01-01',
           },

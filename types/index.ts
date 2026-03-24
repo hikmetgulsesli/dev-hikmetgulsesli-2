@@ -64,7 +64,6 @@ export interface BlogPost extends BaseEntity {
 }
 
 export interface Author {
-  id: string;
   name: string;
   avatar: string;
   title: string;
@@ -86,13 +85,12 @@ export interface SocialLinks {
 
 // Profile Types
 export interface Experience extends BaseEntity {
-  id: string;
   title: string;
   company: string;
   companyUrl?: string;
   location?: string;
   startDate: string; // YYYY-MM
-  endDate?: string; // YYYY-MM or null for current
+  endDate?: string | null; // YYYY-MM or null for current
   current: boolean;
   description: string;
   logo?: string;
@@ -101,7 +99,6 @@ export interface Experience extends BaseEntity {
 }
 
 export interface Education extends BaseEntity {
-  id: string;
   degree: string;
   field: string;
   institution: string;

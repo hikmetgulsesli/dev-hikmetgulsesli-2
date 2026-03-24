@@ -1,23 +1,25 @@
 import { z } from 'zod';
 
 // Contact form validation schema
-// firstName: 2-50 letters only
-// lastName: 2-50 letters only
+// firstName: 2-50 letters (with trim), supports Turkish characters, hyphens, apostrophes
+// lastName: 2-50 letters (with trim), supports Turkish characters, hyphens, apostrophes
 // email: valid email format
 // subject: 5-200 characters
 // message: 20-2000 characters
 export const contactFormSchema = z.object({
   firstName: z
     .string()
+    .trim()
     .min(2, 'Ad en az 2 karakter olmalıdır')
     .max(50, 'Ad en fazla 50 karakter olabilir')
-    .regex(/^[a-zA-ZÇçĞğıİÖöŞşÜü\s]+$/, 'Ad sadece harf içerebilir'),
+    .regex(/^[a-zA-ZÇçĞğıİÖöŞşÜü][a-zA-ZÇçĞğıİÖöŞşÜü\s'-]*$/, 'Ad sadece harf, boşluk, tire ve kesme işareti içerebilir'),
 
   lastName: z
     .string()
+    .trim()
     .min(2, 'Soyad en az 2 karakter olmalıdır')
     .max(50, 'Soyad en fazla 50 karakter olabilir')
-    .regex(/^[a-zA-ZÇçĞğıİÖöŞşÜü\s]+$/, 'Soyad sadece harf içerebilir'),
+    .regex(/^[a-zA-ZÇçĞğıİÖöŞşÜü][a-zA-ZÇçĞğıİÖöŞşÜü\s'-]*$/, 'Soyad sadece harf, boşluk, tire ve kesme işareti içerebilir'),
 
   email: z
     .string()
@@ -36,4 +38,8 @@ export const contactFormSchema = z.object({
     .max(2000, 'Mesaj en fazla 2000 karakter olabilir'),
 });
 
+// Derive TypeScript type from schema - single source of truth
 export type ContactFormInput = z.infer<typeof contactFormSchema>;
+
+// Re-export ContactFormData as alias for ContactFormInput for compatibility
+export type { ContactFormInput as ContactFormData };

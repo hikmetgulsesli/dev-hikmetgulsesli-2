@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { contactFormSchema } from '../types/validation';
+import type { ContactFormData } from '../types/validation';
 
 describe('ContactFormSchema Validation', () => {
   describe('firstName validation', () => {
@@ -23,6 +24,39 @@ describe('ContactFormSchema Validation', () => {
         message: 'Merhaba, web sitesi yaptırmak istiyorum. Bütçem 10.000 TL civarında.',
       });
       expect(result.success).toBe(true);
+    });
+
+    it('should accept names with hyphens', () => {
+      const result = contactFormSchema.safeParse({
+        firstName: 'Mary-Anne',
+        lastName: 'Smith',
+        email: 'maryanne@example.com',
+        subject: 'Freelance teklif',
+        message: 'Merhaba, web sitesi yaptırmak istiyorum. Bütçem 10.000 TL civarında.',
+      });
+      expect(result.success).toBe(true);
+    });
+
+    it('should accept names with apostrophes', () => {
+      const result = contactFormSchema.safeParse({
+        firstName: "O'Connell",
+        lastName: 'Murphy',
+        email: 'oconnell@example.com',
+        subject: 'Freelance teklif',
+        message: 'Merhaba, web sitesi yaptırmak istiyorum. Bütçem 10.000 TL civarında.',
+      });
+      expect(result.success).toBe(true);
+    });
+
+    it('should reject whitespace-only names', () => {
+      const result = contactFormSchema.safeParse({
+        firstName: '   ',
+        lastName: 'Yılmaz',
+        email: 'test@test.com',
+        subject: 'Test konu',
+        message: 'Test mesajı 20 karakterden uzun olmalıdır.',
+      });
+      expect(result.success).toBe(false);
     });
 
     it('should reject names shorter than 2 characters', () => {
@@ -74,6 +108,28 @@ describe('ContactFormSchema Validation', () => {
       expect(result.success).toBe(true);
     });
 
+    it('should accept names with hyphens', () => {
+      const result = contactFormSchema.safeParse({
+        firstName: 'John',
+        lastName: 'Smith-Jones',
+        email: 'john@example.com',
+        subject: 'Proje işbirliği',
+        message: 'Merhaba, projeniz hakkında konuşmak istiyorum. Harika bir iş çıkarmışsınız.',
+      });
+      expect(result.success).toBe(true);
+    });
+
+    it('should reject whitespace-only last names', () => {
+      const result = contactFormSchema.safeParse({
+        firstName: 'Elif',
+        lastName: '    ',
+        email: 'test@test.com',
+        subject: 'Test konu',
+        message: 'Test mesajı 20 karakterden uzun olmalıdır.',
+      });
+      expect(result.success).toBe(false);
+    });
+
     it('should reject last names shorter than 2 characters', () => {
       const result = contactFormSchema.safeParse({
         firstName: 'Elif',
@@ -116,15 +172,15 @@ describe('ContactFormSchema Validation', () => {
         'user123@company.co.uk',
         'test+alias@gmail.com',
       ];
+      const baseData: Omit<ContactFormData, 'email'> = {
+        firstName: 'Elif',
+        lastName: 'Yılmaz',
+        subject: 'Proje işbirliği',
+        message: 'Merhaba, projeniz hakkında konuşmak istiyorum. Harika bir iş çıkarmışsınız.',
+      };
       validEmails.forEach((email) => {
-        const result = contactFormSchema.safeParse({
-          firstName: 'Elif',
-          lastName: 'Yılmaz',
-          email,
-          subject: 'Proje işbirliği',
-          message: 'Merhaba, projeniz hakkında konuşmak istiyorum. Harika bir iş çıkarmışsınız.',
-        });
-        expect(result.success).toBe(true);
+        const result = contactFormSchema.safeParse({ ...baseData, email });
+        expect(result.success, `Email "${email}" should be valid`).toBe(true);
       });
     });
 
@@ -136,15 +192,15 @@ describe('ContactFormSchema Validation', () => {
         'test@',
         'test',
       ];
+      const baseData: Omit<ContactFormData, 'email'> = {
+        firstName: 'Elif',
+        lastName: 'Yılmaz',
+        subject: 'Proje işbirliği',
+        message: 'Merhaba, projeniz hakkında konuşmak istiyorum. Harika bir iş çıkarmışsınız.',
+      };
       invalidEmails.forEach((email) => {
-        const result = contactFormSchema.safeParse({
-          firstName: 'Elif',
-          lastName: 'Yılmaz',
-          email,
-          subject: 'Proje işbirliği',
-          message: 'Merhaba, projeniz hakkında konuşmak istiyorum. Harika bir iş çıkarmışsınız.',
-        });
-        expect(result.success).toBe(false);
+        const result = contactFormSchema.safeParse({ ...baseData, email });
+        expect(result.success, `Email "${email}" should be invalid`).toBe(false);
       });
     });
 

@@ -1,0 +1,9 @@
+{
+  "id": "skill-001",
+  "name": "React",
+  "icon": "react",
+  "proficiency": 95,
+  "category": "frontend",
+  "years": 6,
+  "projects": 25
+}

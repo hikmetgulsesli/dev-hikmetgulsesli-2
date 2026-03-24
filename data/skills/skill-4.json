@@ -1,0 +1,9 @@
+{
+  "id": "skill-004",
+  "name": "Node.js",
+  "icon": "nodejs",
+  "proficiency": 88,
+  "category": "backend",
+  "years": 6,
+  "projects": 22
+}

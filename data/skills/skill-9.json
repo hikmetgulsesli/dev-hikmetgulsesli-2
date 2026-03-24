@@ -1,0 +1,9 @@
+{
+  "id": "skill-009",
+  "name": "Git",
+  "icon": "git",
+  "proficiency": 95,
+  "category": "tool",
+  "years": 7,
+  "projects": 35
+}

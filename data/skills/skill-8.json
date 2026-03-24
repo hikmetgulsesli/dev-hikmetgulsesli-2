@@ -1,0 +1,9 @@
+{
+  "id": "skill-008",
+  "name": "AWS",
+  "icon": "cloud",
+  "proficiency": 75,
+  "category": "devops",
+  "years": 3,
+  "projects": 10
+}

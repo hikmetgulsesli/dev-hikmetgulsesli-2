@@ -1,0 +1,18 @@
+{
+  "id": "exp-001",
+  "title": "Kıdemli Full-Stack Geliştirici",
+  "company": "TechVentures Istanbul",
+  "companyUrl": "https://techventures.example.com",
+  "location": "İstanbul, Türkiye",
+  "startDate": "2022-03",
+  "endDate": null,
+  "current": true,
+  "description": "Kurumsal web uygulamaları ve SaaS platformları geliştiriyorum. Ekip liderliği ve kod inceleme süreçlerini yönetiyorum. Mikroservis mimarisi ve bulut tabanlı çözümler konusunda uzmanlaştım.",
+  "logo": "/images/companies/techventures.png",
+  "type": "full-time",
+  "achievements": [
+    "Yeni nesil e-ticaret platformu geliştirdim ve %40 performans artışı sağladım",
+    "8 kişilik geliştirici ekibine teknik mentorluk sağladım",
+    "CI/CD pipeline'ını iyileştirerek deployment süresini %60 kısalttım"
+  ]
+}
